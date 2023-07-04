@@ -1,6 +1,6 @@
 
 //prop More Detail in Doc file of React
-const BlogList = ({blogs, title}) => {
+const BlogList = ({blogs, title, handelDeleteBlog}) => {
     return ( 
         <div className="blog-list">
             <h2>
@@ -10,6 +10,7 @@ const BlogList = ({blogs, title}) => {
                     <div className="blog-preview" key={blog.id}>
                         <h2>{blog.title}</h2>
                         <p>Written by {blog.author}</p>
+                        <button onClick={() => handelDeleteBlog(blog.id)}> Delete </button>
                     </div>
                 ))}
         </div>
