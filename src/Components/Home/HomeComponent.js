@@ -1,19 +1,26 @@
+import { useState } from "react";
+
 const Home = () => {
 
-    const handleClickMe = (e) => {
-        console.log("Clicked, Fuction Call with Reference", e)
+    const [Name, SetName] = useState("Robot 006");
+    
+    const CurrentDateTime = new Date();
+    const [DateTime, setDateTime] = useState(CurrentDateTime)
+    
+    const handleClickMe = () => {
+        SetName("Robot 007");
+        setDateTime(new Date())
     }
 
-    const handleClickMeAgain = (name, e) => {
-        console.log("Hi " + name, e.target)
-    }
 
     return ( 
         <div className="home">
             <h2>Home Page</h2>
-            {/* <button onClick={handleClickMe()}> Click Me</button> this will revoke the function on runtime withOut Click*/}
+            
+            <p>The {Name} has been Learning React since {DateTime.toString()}</p>
+            
+            <br />
             <button onClick={handleClickMe}> Click Me</button>
-            <button onClick={(e)=> handleClickMeAgain("Robot", e)}> Click Me Again</button>
         </div>
      );
 
