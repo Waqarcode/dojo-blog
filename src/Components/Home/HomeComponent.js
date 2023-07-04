@@ -4,7 +4,7 @@ const Home = () => {
 
     const [Name, SetName] = useState("Robot 006");
     
-    const CurrentDateTime = new Date();
+    const CurrentDateTime = new Date(2023, 6, 4, 10, 30, 0);
     const [DateTime, setDateTime] = useState(CurrentDateTime)
     
     const handleClickMe = () => {
@@ -16,7 +16,7 @@ const Home = () => {
     return ( 
         <div className="home">
             <h2>Home Page</h2>
-            
+
             <p>The {Name} has been Learning React since {DateTime.toString()}</p>
             
             <br />
