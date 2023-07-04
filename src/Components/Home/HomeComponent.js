@@ -1,26 +1,18 @@
 import { useState } from "react";
+import BlogList from "../BlogList/BlogListComponent";
 
 const Home = () => {
 
-    const [Name, SetName] = useState("Robot 006");
-    
-    const CurrentDateTime = new Date(2023, 6, 4, 10, 30, 0);
-    const [DateTime, setDateTime] = useState(CurrentDateTime)
-    
-    const handleClickMe = () => {
-        SetName("Robot 007");
-        setDateTime(new Date())
-    }
+    const [blogs, setBlogs] = useState([
+        { title: 'My new website', body: 'lorem ipsum...', author: 'mario', id: 1 },
+        { title: 'Welcome party!', body: 'lorem ipsum...', author: 'yoshi', id: 2 },
+        { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
+      ])
 
 
     return ( 
         <div className="home">
-            <h2>Home Page</h2>
-
-            <p>The {Name} has been Learning React since {DateTime.toString()}</p>
-            
-            <br />
-            <button onClick={handleClickMe}> Click Me</button>
+            <BlogList blogs={blogs}/>
         </div>
      );
 
