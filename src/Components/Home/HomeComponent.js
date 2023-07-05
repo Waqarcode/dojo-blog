@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BlogList from "../BlogList/BlogListComponent";
 
 const Home = () => {
@@ -13,10 +13,24 @@ const Home = () => {
         setBlogs(newBlogs);
     }
 
+    const [name, setName] = useState("mario");
+    
+    // useEffect(() => {
+    //     console.log("Use Effect Run Only One Time")
+    //   }, [])
+
+    useEffect(()=>{
+        console.log("Use Effect Run On Dependencies");
+        console.log(name);
+    }, [name])
+
     return ( 
         <div className="home">
             <BlogList blogs={blogs} title={"All Blogs"} handelDeleteBlog ={handelDeleteBlog}/>
             {/* <BlogList blogs={blogs.filter((blog)=> blog.author ==='mario')} title={"All Mario's Blogs"}/> */}
+            <br />
+            <button onClick={()=> setName("wiki")}> Click Me</button>
+            <p>{name}</p>
         </div>
      );
 
