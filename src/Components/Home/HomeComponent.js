@@ -3,30 +3,41 @@ import BlogList from "../BlogList/BlogListComponent";
 
 const Home = () => {
 
-    const [blogs, setBlogs] = useState(null);
+  const [blogs, setBlogs] = useState(null);
 
-    const [name, setName] = useState("mario");
-    
-    useEffect(() => {
-        console.log("Use Effect Run Only One Time")
+  const [isLoading, setIsLoading] = useState(true);
 
-        fetch("http://localhost:8000/blogs")
-          .then(res => {
-            return res.json();
-          }).then(data=>{
-            console.log(data)
-            setBlogs(data);
-          })
+  useEffect(() => {
+    // setTimeout(() => {
+    //   fetch('http://localhost:8000/blogs')
+    //   .then(res => {
+    //     return res.json();
+    //   })
+    //   .then(data => {
+    //     setIsLoading(false);
+    //     setBlogs(data);
+    //   })
+    // }, 1000);
+    fetch('http://localhost:8000/blogs')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        console.log(data);
+        setIsLoading(false);
+        setBlogs(data);
+      });
+      
+  }, [])
 
-      }, [])
-
-    return ( 
-        <div className="home">
-            { blogs && <BlogList blogs={blogs} title={"All Blogs"}/> }
-        </div>
-     );
+  return (
+    <div className="home">
+      {isLoading && <div>Loading...</div>}
+      {blogs && <BlogList blogs={blogs} title={"All Blogs"} />}
+    </div>
+  );
 
 
 }
- 
+
 export default Home;
