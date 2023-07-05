@@ -4,11 +4,6 @@ import BlogList from "../BlogList/BlogListComponent";
 const Home = () => {
 
     const [blogs, setBlogs] = useState(null);
-    
-    const handelDeleteBlog = (id) => {
-        const newBlogs = blogs.filter((blog)=> blog.id !== id);
-        setBlogs(newBlogs);
-    }
 
     const [name, setName] = useState("mario");
     
