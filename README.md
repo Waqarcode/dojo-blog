@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# React Learning Progress
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have been following a YouTube playlist to learn React, and I wanted to document my progress and the concepts I have learned so far. This will help the readers of my repository to understand the topics I have covered. Below is a summary of my learning journey:
 
-## Available Scripts
+## Playlist Information
 
-In the project directory, you can run:
+- **Playlist Name:** Full Modern React Tutorial
+- **Playlist Link:** [YouTube Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
 
-### `npm start`
+## Learning Progress
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Introduction to React
+   - Understanding React and its features
+   - Setting up the development environment
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. JSX (JavaScript XML)
+   - Basics of JSX syntax
+   - Embedding JavaScript expressions
 
-### `npm test`
+3. Components and Props
+   - Creating functional components
+   - Passing data through props
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. State and Lifecycle
+   - Managing component state
+   - Lifecycle methods and their usage
 
-### `npm run build`
+5. Handling Events
+   - Adding event handlers to components
+   - Event handling in React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. Lists and Keys
+   - Rendering lists in React
+   - The importance of unique keys
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+7. Forms and Input
+   - Creating forms in React
+   - Handling user input
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+8. React Router
+   - Implementing client-side routing
+   - Navigating between different routes
 
-### `npm run eject`
+9. HTTP Requests with Axios
+   - Sending HTTP requests from React
+   - Handling API responses
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+10. React Hooks
+    - Introduction to hooks (useState, useEffect)
+    - Managing state in functional components
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+11. Project Building
+    - Building a simple React application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please note that this is just a brief overview of the topics covered in the playlist. Each topic may have multiple videos and more in-depth explanations. 
