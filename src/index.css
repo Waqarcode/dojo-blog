@@ -102,3 +102,34 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+
+/* Page Not Found */
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.error-heading {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.error-link {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.error-link:hover {
+  text-decoration: underline;
+}
