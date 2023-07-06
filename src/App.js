@@ -1,3 +1,4 @@
+import BlogDetails from './Components/BlogDetail/BlogDetails';
 import Create from './Components/Create/CreateComponent';
 import Home from './Components/Home/HomeComponent';
 import Navbar from './Components/Nav/NavbarComponent';
@@ -15,6 +16,9 @@ function App() {
             </Route>
             <Route path="/Create">
               <Create />
+            </Route>
+            <Route path="/blog/:id">
+              <BlogDetails />
             </Route>
           </Switch>
         </div>
