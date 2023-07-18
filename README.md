@@ -53,4 +53,4 @@ I have been following a YouTube playlist to learn React, and I wanted to documen
 11. Project Building
     - Building a simple React application
 
-Please note that this is just a brief overview of the topics covered in the playlist. Each topic may have multiple videos and more in-depth explanations. 
+Please note that this is just a brief overview of the topics covered in the playlist. 
