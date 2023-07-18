@@ -53,5 +53,6 @@ I have been following a YouTube playlist to learn React, and I wanted to documen
 11. Project Building
     - Building a simple React application
 ## Run Json Server using
-npx json-server --watch data/db.json --port 8000
+    - npx json-server --watch data/db.json --port 8000
+
 Please note that this is just a brief overview of the topics covered in the playlist. 
